@@ -1,0 +1,62 @@
+ {
+        "button": [
+            {
+                "name": "角色成长", 
+                "sub_button": [
+                    {
+                        "type": "click", 
+                        "name": "灵路之旅", 
+                        "key": "灵路", 
+                        "sub_button": [ ]
+                    },
+                    {
+                        "type": "click", 
+                        "name": "功法", 
+                        "key": "功法", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "click", 
+                        "name": "布阵·酒馆", 
+                        "key": "布酒", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "click", 
+                        "name": "装备", 
+                        "key": "装备", 
+                        "sub_button": [ ]
+                    }, 
+                    {
+                        "type": "click", 
+                        "name": "属性·技能", 
+                        "key": "属技", 
+                        "sub_button": [ ]
+                    }
+                ]
+            }, 
+            {
+                "name": "玩法活动", 
+                "sub_button": [
+                    {
+                        "type": "click", 
+                        "name": "秘境", 
+                        "key": "秘境", 
+                        "sub_button": [ ]
+                    },
+                    {
+                        "type": "click", 
+                        "name": "每日签到", 
+                        "key": "签到", 
+                        "sub_button": [ ]
+                    }
+                ]
+            }, 
+            {
+                "type": "click", 
+                "name": "继续", 
+                "key": "继续", 
+                "sub_button": [ ]
+            }
+        ]
+}

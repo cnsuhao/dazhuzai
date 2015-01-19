@@ -1,0 +1,25 @@
+body{margin:0;padding:0;font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;width:100%;font-size:14px;}
+ul li{list-style-type:none;}
+.fl{float:left;}
+.fr{float:right;}
+input,textarea{font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;}
+
+.container{width:100%;}
+.top{background:#24944e;color:#fff;font-size:16px; font-weight:bold;text-align:center;line-height:50px;}
+.content{width:90%;margin:0 5%;text-align:center;}
+.yuanbao{background:url(/static/images/baoback.png) no-repeat;width:45%;line-height:40px;background-size:100% 100%;color:#489163;font-size:16px;margin-top:10%;}
+.info{border-bottom:1px solid #cdcdcd;margin-top:5%;padding-bottom:5%;}
+.info p{margin:1% 5%;padding:0;}
+.zhanghao{font-size:16px;color:#262626;}
+.yue{font-size:16px;color:#829c8c;}
+.yue span{color:#24944e；}
+.other{margin-top:10%;width:45%;}
+.other input{width:100%;line-height:30px;font-size:16px;}
+
+.jiage{clear:both;float:left;margin-top:10%;width:100%;text-align:center;}
+.jieguo{font-size:24px; font-weight:bold;color:#999;}
+.qianshu{color:#169e49;}
+.zhekou{font-size:16px;}
+.chongzhi{background:#24944e;color:#fff;width:100%;height:40px;border:none;font-size:16px;}
+.zhushi{float:left;text-align:left;margin-top:5%;color:#999;}
+.zhushi p{margin:0;padding:0;}

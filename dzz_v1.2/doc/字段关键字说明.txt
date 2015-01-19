@@ -1,0 +1,19 @@
+
+"力量"：power
+“内力”：internal
+“体质”：physique
+"普通攻击" : attack
+"普通防御" : defend
+"普通破防" : explode
+"气血" : maxhp
+"法术防御": magic_defend
+"速度" : speed
+"法术破防" : magic_explode
+"法术攻击" : magic_attack
+"怒气(初始能量)" : dander
+"命中" : hit
+"闪躲" : dodge 
+"暴击" : crit
+"韧性" : tenacity
+"致命" : deadly
+

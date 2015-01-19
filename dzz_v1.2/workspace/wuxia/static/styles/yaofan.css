@@ -1,0 +1,190 @@
+/* CSS Document */
+
+body{margin:0;padding:0;color:#262626;font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;}
+ul li{list-style-type:none;}
+.fl{float:left;}
+.fr{float:right;}
+.button{margin:0px;}
+input{ text-indent:10px;font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;}
+.content1{margin:8%;margin-top:2%;font-size:14px;position:absolute; z-index:0;min-width:260px;}
+.content2{margin:8%;margin-bottom:0;font-size:14px;min-width:260px;min-width:260px;}
+.juzhong{margin-left:auto;margin-right:auto;}
+.qianshu{color:#ff6b50;font-size:32px;margin:0 2%;}
+.dengji{color:#ff6b50;}
+.liyou{font-size:18px;margin-top:10%;}
+.benci{font-size:18px;margin-top:8%;margin-bottom:20%;}
+.nengyao{margin-bottom:10%;}
+.lycon{margin-top:5%;height:100px; width:100%;resize:none; outline:none;border:1px solid #999; border-radius:5px;font-size:18px;color:#999;padding:10px;}
+.sub{background:#ff6b50;color:#fff;font-size:24px;border:none;width:100%;padding:8px 0; outline:none;margin-top:20%;margin-bottom:5px;}
+.yaoqian{border-radius:10px;padding:5%;width:100%;background:#fff;margin-top:15%;}
+.suiji{float:right;margin-bottom:10px;}
+.suiji img{width:60px;}
+.gonggao{margin:0;padding:0;color:#999;}
+.zuida,.zuida1,.zuida2{background:#ddd;margin:0;padding:0;height:100%;float:left;width:100%;position:absolute;}
+.zuida1{z-index:0;}
+.zuida2{z-index:555;display:none;}
+.zuida2 .content2{margin-top:30%;}
+.zuida2 .benci,.zuida1 .benci{text-align:center;}
+
+/*详情页*/
+p{line-height:1.5em;}
+.top{margin-top:0.5%;}
+.lyf{font-weight:bold;font-size:14px;}
+.riqi{font-size:12px;color:#666;}
+.damei{margin-right:5px;}
+.top,.woshuo{width:100%}
+.woshuo{margin-top:10%;}
+.yftx{width:20%;}
+.wsdh{margin-left:0px;background:#eee;font-size:14px;padding:10px;line-height:1.2em;position:relative;width:70%;color:#6b6b6b;position:relative;
+	padding:10px;
+	border:1px solid #ccc;
+	color:#333;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;}
+.wsdh.left{margin-left:25px;}
+.wsdh:after{content:"";
+	position:absolute;
+	bottom:-13px; /* value = - border-top-width - border-bottom-width */
+	left:47px; 
+	border-width:13px 13px 0;
+	border-style:solid;
+	border-color:#ccc transparent;
+    display:block; 
+    width:0;}
+.wsdh:before{content:"";
+	position:absolute;
+	bottom:-20px; /* value = - border-top-width - border-bottom-width */
+	left:40px; /* controls horizontal position */
+    border-width:20px 20px 0;
+	border-style:solid;
+    border-color:#ccc transparent;
+    display:block; 
+    width:0;}
+.wsdh.left:before {
+	top:10px; /* controls vertical position */
+	bottom:auto;
+	left:-15px; /* value = - border-left-width - border-right-width */
+	border-width:8px 15px 10px 0;
+	border-color:transparent #ccc;
+}
+
+/* creates the smaller  triangle */
+.wsdh.left:after {
+	top:12px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+	left:-15px; /* value = - border-left-width - border-right-width */
+	border-width:6px 15px 9px 0;
+	border-color:transparent #eee;
+}
+/*.jiantou{position:absolute;top:15px;left:23%;width:0;height:0;border-top:10px solid transparent;border-right:15px solid #eee;border-bottom:10px solid transparent;}*/
+.niu{width:30%;margin-top:5%;}
+.dashang{background:#ff6b50;width:100%;padding:10px 0;margin-top:5%;font-size:16px; font-weight:bold;}
+.jxz{width:100%;margin-top:10%;text-align:center;font-size:16px;color:#999;}
+.hengxian{width:30%;height:1px;background:#000;margin-top:10px;}
+.dstj{margin-top:10%;width:100%;font-size:16px;}
+.renshu{color:#ff6b50;}
+.tuxian{position:absolute;z-index:444;display:none;}
+.yuantu{position:absolute;z-index:555;display:none;text-align:center; vertical-align:middle;height:100%; width:100%;}
+.yuantu img{margin:auto;margin-top:40%;}
+
+.sheida{width:100%;font-size:14px;border:1px solid #999; border-radius:10px;padding:5%;padding-top:0;margin-top:5px;margin-bottom:15%;}
+.da{width:100%;padding:5% 0;border-bottom:1px solid #dedede;}
+.dayou{width:80%;}
+.dayou div{width:100%;margin-left:5%;}
+.sh{margin-bottom:5%;}
+.yftx1{width:14%;}
+.dsren{ font-weight:bold;}
+.dstime{font-size:12px;color:#999;}
+.yaofan{background:#000;width:101%;padding:10px 0;color:#fff;position:fixed;bottom:0;font-size:18px;text-align:center; opacity:0.7;}
+
+.myimg{margin-top:8%;width:100%;border:1px solid #999;text-align:center; border-radius:5px;padding:4%;}
+.sub3{margin-top:10%;}
+.kld{margin-left:5%;font-size:10px;}
+.fbx{font-size:8px;color:#bbbbbb;}
+.input{position:absolute;z-index:555;top:0;left:0;width:100%;height:100%; opacity:0;}
+.jiatu1{width:8%;position:absolute;top:25%;left:8%;}
+.kla{margin-left:15%;}
+.nb{width:40%;position:relative;top:-20px;display:inline;}
+
+/*打赏*/
+.dier{position:absolute; z-index:9999;width:100%;height:100%;display:none;}
+.heibg{background:#000;opacity:0.8;width:100%;height:100%;}
+.wodashang{position:absolute;z-index:1000;margin:8% 8%; margin-top:10%;width:85%;top:0; border-radius:10px;background:#fff;}
+.wodashang1{background:#fff url(../images/xia.png) repeat-x bottom;}
+.wodashang form{margin:20% 8%;color:#666;font-size:16px; font-weight:bold;}
+.dayi{width:100%;}
+.dayuan{text-align:right;width:40%;display:inline;padding:0 10px;margin-right:10px;}
+.dayuan,.shuaiyiju{height:40px;border:1px solid #999; border-radius:5px;color:#999;}
+.shuaiyiju{width:100%;height:60px; resize:none;margin-top:5px;padding:10px;font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;font-size:14px;}
+.yuan{margin-top:5%;}
+.sub1{margin-top:16%;}
+.dsta{width:100%;margin-top:30px;font-size:14px;}
+.dswai{width:100%;margin-bottom:8%;font-size:14px;}
+.gonggao{ font-weight:normal;}
+
+.diyi{position:absolute; z-index:900;width:100%;height:150%;text-align:center;display:none;}
+.fenxiangzi{position:absolute;top:3%;left:15%;color:#fff;margin-left:auto;margin-right:auto;}
+.fenxiangzi p{font-size:18px;width:100%;clear:both;}
+.dajian1{width:35%;margin-right:5%;float:right;}
+.fximg{position:absolute;top:-50%;right:-35%;width:60%;}
+.disan{position:absolute; z-index:1000;width:100%;height:150%;text-align:center;display:none;}
+.disan .fximg{top:-45%;}
+.dsta1{width:40%;}
+.dsta2{margin-top:4%;margin-right:10px;}
+.yft{width:30%;}
+.tishi{margin:0 8%;color:#666;margin-bottom:15px; text-align:center;}
+/*升级*/
+.disi{position:absolute; z-index:1050;width:100%;height:150%;text-align:center;font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;display:none;}
+.chenggong{font-size:14px;color:#262626; font-weight:bold;}
+.chenggong img{width:20%;display:inline;}
+.ts{font-size:14px;font-weight:bold;color:#262626;}
+.tsnr{margin:10%;margin-top:5%;}
+.jx,.fx{font-size:16px;color:#fff;padding:10px 0;width:45%;}
+.jx{background:#ff6b50;margin-right:5%;}
+.fx{background:#54cb00;}
+.tshua{float:left;width:100%;text-align:left;margin-top:20%;}
+.tshua li{list-style-type:none;margin:5% 0;}
+.yqds{float:left;width:100%;padding:8px 0;font-size:18px;background:#ff6b50;margin:20% 0;}
+a.yqds{color:#fff;}
+.dazi{font-size:24px;margin:0 8px;}
+.xuan{position:absolute;top:0;color:#fff;font-size:16px;text-align:center;margin:0 8% 0 10%;}
+.dajian{width:25%;float:right;}
+.kuai{margin-top:40px;float:left;}
+.jibai{margin-top:30%;}
+.hyds{font-size:16px;}
+
+/*重置*/
+.diwu{position:absolute; z-index:1999;width:100%;height:100%;text-align:center;font-family:"微软雅黑", "Adobe 宋体 Std L", Arial;display:none;}
+.diwu .chenggong{font-size:18px; font-weight:normal;}
+.chong{margin-top:30%;font-size:16px;}
+
+/*意见*/
+.yijian{}
+/*提现*/
+.yaoqian1{text-align:center;}
+.logo img{width:60%;margin:auto;}
+.kk{border:1px solid #999;width:100%;height:35px;font-size:16px;color:#999;margin:10% 0 5% 0; border-radius:5px;}
+.tx{font-size:14px;color:#54cb00;}
+.tx span{font-size:24px;}
+.sub2{margin-top:10%;}
+/*打赏列表*/
+.dslist{font-size:16px;float:left;width:100%;}
+.dslist li{padding:3% 8%;width:100%;float:left;border-bottom:1px solid #999;background:#fff;}
+.dss{float:left;color:#262626;width:55%;text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.dsq{float:right;color:#999;font-size:14px;}
+.dsrq{clear:both;float:left;margin:0;padding:0;margin-top:3%;font-size:14px;color:#999;width:100%;}
+.tz{float:left;width:100%;}
+.youzhi{float:right;margin:0 0 0 10%;position:relative;top:10px;;}
+.youzhi img{width:70%;}
+
+/*求打赏*/
+.ds{float:right;margin-right:15%;}
+
+.load{position:absolute;z-index:777;background:#000;margin:0 25%;margin-top:35%; opacity:0.4;height:100px;width:50%; border-radius:5px;text-align:center;display:none;}
+.tijiao{position:absolute;font-size:16px;color:#fff;left:20%;top:32%}
+.xs2{height:100%;}
+
+.bctc,.bct,.bc{position:absolute;z-index:99999;background:#000; opacity:0.6;margin:0 10%;width:80%;height:30%;text-align:center; border-radius:10px;margin-top:40%;display:none;}
+.bcbg{color:#fff;font-size:16px;margin:0 auto;margin-top:30%;}

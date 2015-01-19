@@ -1,0 +1,62 @@
+/*
+运行:
+    python manage.py importdata config.json
+
+书写规则
+app:django app名称
+decode:csv编码方式,windows中一般从excel转化过来时gbk
+encode:你需要的编码方式
+rootpath:数据文件目录
+file:数据文件名
+mode:w写 a追加
+fields:csv中字段和数据库中字段一一对应(数据库:txt),如果字段一样可以为空
+*/
+{
+    "app":"gamedata",
+    "rootpath":"datatxt",
+    "decode":"utf8",
+    "encode":"utf8",
+    "models":{
+        // "EquipAdvance":{
+        // },
+        // "EquipmentConfig":{
+
+        // }
+        // "EquipQualityUpdate":{
+            
+        // }
+        // "Experience":{
+            
+        // }
+        // "Fam":{
+            
+        // },
+        // "FamNode":{
+            
+        // },
+        // "FightInfo":{
+            
+        // },
+        // "MonsterInfo":{      
+        // },
+        // "Partners":{      
+        // }
+        // "Plot":{      
+        // }
+        // "QualityAddition":{      
+        // }
+        // "Road":{      
+        // }
+        // "SkillInfo":{      
+        // }
+        // "StrengthenGrow":{
+        // }
+        // "StrengthenInitConst":{
+        // },
+        // "Template":{
+        // }
+        "ArenaRobot":{
+
+        }
+    }
+}

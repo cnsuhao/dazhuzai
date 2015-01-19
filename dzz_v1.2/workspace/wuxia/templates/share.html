@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+
+<title>{{ share.title }}</title>
+<link rel="shortcut icon" href="/static/images/favicon.ico"/>
+<link href="/static/styles/style.css"          rel="stylesheet" type="text/css">
+<link href="/static/styles/framework.css"      rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="/static/scripts/jquery.js"></script>
+<link rel="stylesheet" href="/static/styles/yaofan.css">
+</head>
+
+<div class="content1 neirong">
+    <div class="juzhong top fl">
+        <span class="lyf fl"><span class="dengji">{{ share.nickname }}
+        </span></span><span class="riqi fr">{{ share.today }}</span>
+    </div>
+    <div class="juzhong woshuo fl">
+        <img class="yftx fl" src="/static/images/{{ share.headimg }}"/>
+        <div class="waip">
+            <p class="wsdh fl left">{{ share.hint }}
+                <span><br></span>
+            </p>
+        </div>
+        <div class="jiantou"></div>
+    </div>
+    {% if share.myself %}
+        <a class="dashang button button-orange" id="dashang">{{ share.share }}</a>
+    {% else %}
+        <a class="dashang button button-orange" id="yaofan">{{ share.reqtitle }}</a>
+    {% endif %}
+
+</div>
+<div class="diyi">
+   <div class="heibg heibg1">
+          </div>
+   <div class="fenxiangzi">
+     <img class="dajian1" src="/static/images/dajiantou.png">
+     <p class="hyds">分享到朋友圈，向好友炫耀一下吧！</p>
+
+   </div>
+</div>
+{% if share.myself %}
+    <!--
+    <a class="button-orange yaofan" id="yaofan">{{ share.reqtitle }}</a>
+    -->
+{% else %}
+    <a class="button-orange yaofan" id="dashang">{{ share.share }}</a>
+{% endif %}
+<script>
+$(function(){
+    var $vexist = {{ share.vexist}};
+    var $dashang=$("#dashang");
+    var $diyi=$(".diyi");
+    var $yaofan = $("#yaofan")
+    $dashang.click(function(){
+        $diyi.show();
+    });
+    $diyi.click(function(){
+        $diyi.hide();
+        $dashang.show();
+    });
+    $yaofan.click(function(){
+        if($vexist){
+            //WeixinJSBridge.invoke('closeWindow',{},function(res){
+            //});
+            alert("已经关注，赶快去做玩法活动获取奖励吧");
+        }else{
+            var url = "http://mp.weixin.qq.com/s?__biz=MjM5NzY4NzEzOA==&mid=201002153&idx=1&sn=1dfe5317fac1d1ace4e40d273f014ff9";
+            window.location.href=url;
+        }
+    });
+});
+   
+</script>
+<script>
+var imgUrl = "{{ share.domain }}"+"/static/images/dazhuzai.jpg";
+var lineLink = location.href;
+var descContent = "{{ share.message }}";
+var shareTitle = "{{ share.title }}";
+var appid = 'wx0d16788ba912197a';
+
+function shareFriend() {
+    WeixinJSBridge.invoke('sendAppMessage',{
+                            "appid": appid,
+                            "img_url": imgUrl,
+                            "img_width": "640",
+                            "img_height": "640",
+                            "link": lineLink,
+                            "desc": descContent,
+                            "title": shareTitle
+                            }, function(res) {
+                            _report('send_msg', res.err_msg);
+                            })
+}
+function shareTimeline() {
+    WeixinJSBridge.invoke('shareTimeline',{
+                            "img_url": imgUrl,
+                            "img_width": "640",
+                            "img_height": "640",
+                            "link": lineLink,
+                            "desc": descContent,
+                            "title": descContent
+                            }, function(res) {
+                                // 返回res.err_msg,取值
+                                // share_timeline:cancel 用户取消
+                                // share_timeline:fail　发送失败
+                                // share_timeline:ok 发送成功
+
+                            });
+  
+}
+function shareWeibo() {
+    WeixinJSBridge.invoke('shareWeibo',{
+                            "content": descContent,
+                            "url": lineLink,
+                            }, function(res) {
+                            _report('weibo', res.err_msg);
+                            });
+
+}
+
+var rewardUrl = "{{ share.rewardUrl }}"
+function reward(){
+    $.ajax({
+        type: "GET",
+        url: rewardUrl,
+        success: function(data){
+            
+        }
+    });
+}
+
+
+// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+        // 发送给好友
+        WeixinJSBridge.on('menu:share:appmessage', function(argv){
+            shareFriend();
+            });
+
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function(argv){
+            shareTimeline();
+            reward();
+            });
+
+        // 分享到微博
+        WeixinJSBridge.on('menu:share:weibo', function(argv){
+            shareWeibo();
+            });
+        }, false);
+</script>
+</body>
+</html>

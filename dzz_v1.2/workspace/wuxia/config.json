@@ -1,0 +1,14 @@
+{
+"master":{"roothost":"localhost","rootport":9999,"webport":9998},
+"servers":{
+"web":{"webport":5000,"name":"web1","app":"app.webapp","db":true}
+},
+"db":{
+"host":"localhost",
+"user":"root",
+"passwd":"",
+"port":3306,
+"db":"",
+"charset":"utf8"
+}
+}
